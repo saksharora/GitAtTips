@@ -1,0 +1,178 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #bfc9d3;
+}
+
+.container {
+  background-color: #8a81af;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#loader {
+  
+  text-align: center;
+}
+
+#repositories {
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+.select-wrapper {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Optional: Adjust the spacing for smaller screens */
+@media (max-width: 576px) {
+  .container {
+    margin-top: 10px;
+  }
+}
+
+.badge-primary {
+  background-color: #05ac05; /* Adjusted color for .badge-primary */
+  color: #ffffff; /* Text color for better visibility on the new background color */
+}
+/* Add your custom styles here if needed */
+/* Add your custom styles here if needed */
+
+/* Additional styles for user profile layout */
+.user-profile {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-profile-info {
+  flex: 1;
+}
+
+.user-profile h2 {
+  margin-top: 0;
+}
+
+.user-profile p {
+  margin: 5px 0;
+}
+.user-profile .card {
+  border: none; /* Remove border for a seamless integration */
+  box-shadow: none; /* Remove box-shadow to match user profile style */
+  
+}
+
+.user-profile .card-body {
+  padding: 1rem;
+  background-color: #353232; /* Lighter background for the stats card */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.user-profile .card-text {
+  font-size: 1rem;
+  color: #dbe2e7; /* Gray text color */
+}
+
+.user-profile .card-text strong {
+  font-weight: 600; /* Bolder font weight for the labels */
+}
+.user-profile .card,
+.user-profile .mb-3 {
+  width: 75%;
+  margin: 0 auto; /* Center horizontally */
+  margin-bottom: 20px;
+  
+}
+.github-icon {
+  color: #c71818; /* Adjust color as desired */
+  font-size: 2rem; /* Adjust size as desired */
+  transition: color 0.2s ease-in-out;
+}
+
+.github-icon:hover {
+  color: #f71b1b; /* Adjust hover color as desired */
+}
+
+/* Optionally center the card and add bottom margin */
+.user-profile .card,
+.user-profile .mb-3 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+} 
+/* Updated styles for the loader */
+
+/* Updated styles for a circular loader */
+
+#loader {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#loader::after {
+  content: '';
+  border: 6px solid #f16f19; /* Border color */
+  border-radius: 50%;
+  border-top: 6px solid #05f157; /* Spinner color */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

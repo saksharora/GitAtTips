@@ -1,0 +1,28 @@
+/* Add styling for the About page */
+
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    background-color: #8a81af; /* White container background */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.footer {
+    background-color: #8a81af; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    padding: 10px 0;
+}
+
+.header-link {
+    color: #007bff; /* Header links color */
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
